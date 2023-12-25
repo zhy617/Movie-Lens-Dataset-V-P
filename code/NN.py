@@ -23,7 +23,7 @@ dataset.head()
 from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader, TensorDataset
 
-data_train, data_val = train_test_split(dataset, test_size=0.2, random_state=42)
+data_train, data_val = train_test_split(dataset, test_size=0.1)
 
 # 训练集特征和标签
 X_train = torch.FloatTensor(data_train.iloc[:, :20].values)
